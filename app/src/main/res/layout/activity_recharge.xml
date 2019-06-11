@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:background="@drawable/page_ripple"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintLeft_toLeftOf="@+id/chongqian"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="68元"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="51dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="19dp"
+                android:layout_weight="1"
+                android:text="128元"
+                app:layout_constraintLeft_toLeftOf="@+id/radioButton"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="19dp"
+                android:layout_weight="1"
+                android:text="198元"
+                app:layout_constraintLeft_toLeftOf="@+id/radioButton2"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="19dp"
+                android:layout_weight="1"
+                android:text="328元"
+                app:layout_constraintLeft_toLeftOf="@+id/radioButton3"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="648元"
+                app:layout_constraintLeft_toLeftOf="@+id/radioButton4"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/chongqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="343dp"
+            android:layout_weight="1"
+            android:text="充值"
+            android:background="@drawable/btn_selector"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+

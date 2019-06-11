@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生命在于矛盾，在于运动，一旦矛盾消除，运动停止，生命也就结束了。 ——歌德"
+        android:textSize="16sp"
+        android:background="#85000000"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

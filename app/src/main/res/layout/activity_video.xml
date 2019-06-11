@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/page_ripple"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context="com.example.pc.connect_2.HistoryActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/navigation">
+    </WebView>
+
+
+
+
+
+    <RadioGroup
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue1"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/seg1"
+            style="@style/MainRadioButtonStyle"
+            android:tag="0"
+            android:text="精品推荐" />
+
+        <RadioButton
+            android:id="@+id/seg2"
+            style="@style/MainRadioButtonStyle"
+            android:tag="1"
+            android:text="器械专区" />
+
+        <RadioButton
+            android:id="@+id/seg3"
+            style="@style/MainRadioButtonStyle"
+            android:tag="2"
+            android:text="减脂塑形" />
+
+        <RadioButton
+            android:id="@+id/seg4"
+            style="@style/MainRadioButtonStyle"
+            android:tag="3"
+            android:text="肌肉强化" />
+    </RadioGroup>
+
+</RelativeLayout>

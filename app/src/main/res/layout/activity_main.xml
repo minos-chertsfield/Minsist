@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_ripple"
+    android:clickable="true">
+
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="300dip"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请输入账号(10位以内)"
+        android:maxLength="10"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/edit_2"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:hint="请输入密码(12位以内)"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/edit_3"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:hint="请输入姓名"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/edit_4"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:hint="请输入电话号码（11位）"
+        android:inputType="phone"
+        android:lines="1"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/edit_5"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请输入出生日期"
+        android:textColor="#FFFFFF"
+        android:focusable="false"
+        android:inputType="date"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/edit_6"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:digits="0123456789X"
+        android:maxLength="18"
+        android:hint="请输入身份证号（18位）"
+        android:lines="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_selector"
+        android:text="注册" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dip" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_selector"
+        android:text="返回" />
+
+</LinearLayout>

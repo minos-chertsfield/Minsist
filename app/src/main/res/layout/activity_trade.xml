@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_ripple"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人数"
+        android:textSize="18sp"
+        android:id="@+id/textView2"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/people_num" />
+
+    <!--<Button
+        android:id="@+id/btn_pnum"
+        android:layout_gravity="center"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style1"
+        android:text="人数"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/r1"
+        android:layout_centerHorizontal="true" />-->
+    <Spinner
+        android:layout_width="200dip"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/people_num"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:entries="@array/people"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView3" />
+    <!--<Button
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_style1"
+        android:layout_alignParentTop="true" />-->
+
+    <TabWidget
+        android:id="@+id/trade_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/people_num"
+        android:layout_alignParentStart="true"
+        android:gravity="center">
+        <Button
+            android:id="@+id/op1"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="慢跑"
+            android:background="@drawable/btn_selector"/>
+        <Button
+            android:id="@+id/op2"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_selector"
+            android:text="室外有氧"/>
+        <Button
+            android:id="@+id/op3"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:textColor="#FFFFFF"
+            android:text="专业器械"/>
+
+        <Button
+            android:id="@+id/op4"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_selector"
+            android:text="专业有氧"/>
+        <Button
+            android:id="@+id/op5"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_selector"
+            android:text="定制塑型"/>
+    </TabWidget>
+
+    <!--<Spinner
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/trade_hopeplace"
+        android:entries="@array/type"
+        android:textAlignment="center"
+        android:spinnerMode="dropdown" />-->
+
+    <!--<EditText
+        android:id="@+id/trade_type"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请输入选择类型"
+        android:lines="1"
+        android:layout_marginTop="31dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/people_num"
+        android:layout_centerHorizontal="true" />-->
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="期望时间"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_toStartOf="@+id/trade_hopetime"
+        android:layout_alignBottom="@+id/trade_hopetime" />
+
+    <Spinner
+        android:id="@+id/trade_hopetime"
+        android:layout_width="200dip"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:entries="@array/time"
+        android:layout_below="@+id/trade_type"
+        android:layout_alignEnd="@+id/submit"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/trade_hopeplace"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请选择期望地点"
+        android:focusable="false"
+        android:textColor="#FFFFFF"
+        android:lines="1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView" />
+
+
+    <!--<EditText
+        android:id="@+id/trade_cost"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请选择价格"
+        android:lines="1"
+        android:layout_below="@+id/trade_hopeplace"
+        android:layout_alignStart="@+id/trade_hopeplace"
+        android:layout_marginTop="12dp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="价格"
+        android:id="@+id/textView3"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/trade_cost"
+        android:layout_toStartOf="@+id/trade_hopetime" />
+
+    <Spinner
+        android:id="@+id/trade_cost"
+        android:layout_width="200dip"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:entries="@array/cost"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:text="提交订单"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_selector"
+        android:layout_below="@+id/trade_cost"
+        android:layout_alignStart="@+id/cancel"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:text="取消订单"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_selector"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_selector"
+        android:text="查看订单"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/cancel"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
+

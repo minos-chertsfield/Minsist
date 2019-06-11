@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_touch_app_black_24dp"
+            android:title="在线预约" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_play_circle_filled_black_24dp"
+            android:title="视频教程" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="锻炼记录" />
+        <item
+            android:id="@+id/nav_quit"
+            android:icon="@drawable/ic_directions_run_black_24dp"
+            android:title="退出" />
+    </group>
+
+
+</menu>

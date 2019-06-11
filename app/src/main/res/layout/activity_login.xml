@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_ripple"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/head" />
+
+    <EditText
+        android:id="@+id/usr"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请输入用户账号"
+        android:lines="1"
+        android:background="@drawable/edittext_style"
+        android:textColor="#FFFFFF"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+
+    <EditText
+        android:id="@+id/tusr"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:hint="请输入教练账号"
+        android:lines="1"
+        android:background="@drawable/edittext_style"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请输入用户密码"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edittext_style"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+
+    <EditText
+        android:id="@+id/tpwd"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请输入教练密码"
+        android:lines="1"
+        android:background="@drawable/edittext_style"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+    <!--<RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="普通用户"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="45dip"/>
+
+        <RadioButton
+            android:id="@+id/trainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教练"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="45dip"/>
+    </RadioGroup>-->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+    <CheckBox
+        android:id="@+id/remember_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="记住密码"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_gravity="center"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_selector" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="260dip"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:text="注册"
+        android:textColor="#FFFFFF"/>
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dip" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_selector"
+        android:text="退出"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
